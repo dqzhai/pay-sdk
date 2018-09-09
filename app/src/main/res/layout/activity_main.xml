@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.payelves.paydemo_withsdk.MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:layout_marginTop="20dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="20">
+
+            <ru.github.igla.ferriswheel.FerrisWheelView
+                android:id="@+id/ferrisWheelView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                app:fwv_cabinsNumber="10"
+                app:fwv_rotateSpeed="0" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0"
+            android:layout_marginBottom="@dimen/e_dimen_40">
+
+
+            <com.lid.lib.LabelButtonView
+            android:id="@+id/priceButton"
+            android:layout_width="150dp"
+            android:layout_height="48dp"
+            android:background="@color/appColor"
+            android:layout_marginLeft="20dp"
+            android:gravity="center"
+            android:text="金额:¥0.10"
+            android:textColor="#ffffff"
+            app:label_backgroundColor="@color/appColorBtnTip"
+            app:label_distance="20dp"
+            app:label_height="20dp"
+            app:label_orientation="RIGHT_TOP"
+            app:label_text="price"
+            app:label_textSize="12sp" />
+
+            <com.lid.lib.LabelButtonView
+                android:id="@+id/payButton"
+                android:layout_width="150dp"
+                android:layout_height="48dp"
+                android:background="@color/appColor"
+                android:gravity="center"
+                android:layout_marginLeft="20dp"
+                android:text="去支付"
+                android:textColor="#ffffff"
+                app:label_backgroundColor="@color/appColorBtnTip"
+                app:label_distance="20dp"
+                app:label_height="20dp"
+                app:label_orientation="RIGHT_TOP"
+                app:label_text="click"
+                app:label_textSize="12sp" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:tooltipText="start"
+        app:backgroundTint="@color/appColor"
+        app:rippleColor="@color/appColor"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="80dp"
+        android:src="@drawable/start" />
+
+    <!--
+        app:srcCompat图片不显示，android:src显示
+        app:srcCompat="@drawable/start"
+    -->
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay"
+        >
+
+        <!--
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            app:title="打赏作者"
+            android:background="?attr/colorPrimary"
+            app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+            -->
+
+    </android.support.design.widget.AppBarLayout>
+
+
+</android.support.design.widget.CoordinatorLayout>

@@ -1,0 +1,4 @@
+<resources>
+    <dimen name="fab_margin">30dp</dimen>
+    <dimen name="e_dimen_40">20dp</dimen>
+</resources>
