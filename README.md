@@ -6,7 +6,19 @@ https://bintray.com/bintray/jcenter?filterByPkgName=sdk-release
 
 # now let's begin
 
-## step1: 加入项目所需权限
+
+## step1: 配置仓库地址
+在项目文件中 build.gradle 添加以下配置：
+
+```
+dallprojects {
+    repositories {
+        jcenter()
+    }
+}
+```
+
+## step2: 加入项目所需权限
 
 ```
 
@@ -19,7 +31,7 @@ https://bintray.com/bintray/jcenter?filterByPkgName=sdk-release
 
 ```
 
-### step2: 引入SDK
+### step3: 引入SDK
 
 ```
 dependencies {
@@ -29,7 +41,7 @@ dependencies {
 ```
 
 
-### step3: 支付服务初始化
+### step4: 支付服务初始化
 
 ```
 
