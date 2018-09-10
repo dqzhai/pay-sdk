@@ -1,8 +1,10 @@
 # pay-sdk
 this is a simple pay sdk with alipay and wechat-pay
 
+## pay-jdk in jcenter
+https://bintray.com/bintray/jcenter?filterByPkgName=sdk-release 
 
-# let begin
+# now let's begin
 
 ## step1: 加入项目所需权限
 
